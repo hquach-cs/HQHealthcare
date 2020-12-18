@@ -8,6 +8,8 @@ import {
   NavItem,
   NavLinkS,
   NavLinkR,
+  NavLinkRButton,
+  NavItemButton,
 } from "./NavbarElements";
 const Navbar = () => {
   return (
@@ -31,9 +33,9 @@ const Navbar = () => {
           <NavItem>
             <NavLinkS to="contact">Contact</NavLinkS>
           </NavItem>
-          <NavItem>
-            <NavLinkR to="/login">Log In</NavLinkR>
-          </NavItem>
+          <NavItemButton>
+            <NavLinkRButton to="/login">Log In</NavLinkRButton>
+          </NavItemButton>
         </NavMenu>
       </Nav>
     </>
