@@ -4,6 +4,8 @@ import {
   HeaderWarning,
   HeaderWarningText,
   HeaderWarningButton,
+  HeaderContainerText,
+  HeaderContainerTextInner,
 } from "./HeaderElements";
 
 const Header = () => {
@@ -16,7 +18,16 @@ const Header = () => {
           <HeaderWarningButton>Learn More!</HeaderWarningButton>
         </HeaderWarningText>
       </HeaderWarning>
-      <HeaderContainer></HeaderContainer>
+      <HeaderContainer>
+        <HeaderContainerText>
+          During tragic time, we will be here for you!
+          <span>
+            <HeaderContainerTextInner>
+              Life-changing and everyday care.
+            </HeaderContainerTextInner>
+          </span>
+        </HeaderContainerText>
+      </HeaderContainer>
     </>
   );
 };
