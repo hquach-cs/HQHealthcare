@@ -47,6 +47,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  margin-right: 24px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -55,6 +56,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  width: 100px;
 `;
 
 export const NavLinkS = styled(LinkScroll)`
