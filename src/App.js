@@ -5,13 +5,14 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SignIn from "./components/SignIn";
-
+import StorySection from "./components/StorySection";
 function App() {
   return (
     <Router>
       <Navbar />
       <Route exact path="/">
         <Header />
+        <StorySection />
         <Footer />
       </Route>
       <Route path="/signin">

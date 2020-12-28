@@ -7,6 +7,9 @@ export const SignInContainer = styled.div`
   top: 40%;
   left: 50%;
   transform: translate(-50%, -45%);
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const SignInWrapper = styled.div`

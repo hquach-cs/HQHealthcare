@@ -19,7 +19,6 @@ export const HeaderWarningText = styled.span`
 `;
 
 export const HeaderWarningButton = styled.div`
-  border: 2px solid #dd0000;
   display: inline;
   border-radius: 5px;
   margin-left: 20px;
