@@ -1,16 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SignIn from "./components/SignIn";
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Header />
-      <Footer />
+      <Route exact path="/">
+        <Header />
+        <Footer />
+      </Route>
+      <Route path="/signin">
+        <SignIn />
+      </Route>
     </Router>
   );
 }

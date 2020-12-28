@@ -34,7 +34,7 @@ const Navbar = () => {
             <NavLinkS to="contact">Contact</NavLinkS>
           </NavItem>
           <NavItemButton>
-            <NavLinkRButton to="/login">Log In</NavLinkRButton>
+            <NavLinkRButton to="/signin">Log In</NavLinkRButton>
           </NavItemButton>
         </NavMenu>
       </Nav>

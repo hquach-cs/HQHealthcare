@@ -113,6 +113,14 @@ export const HeaderGuideButton = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    background: red;
+    border: 2px solid white;
+    color: white;
+  }
 `;
 
 export const HeaderGuideSeperator = styled.div`
