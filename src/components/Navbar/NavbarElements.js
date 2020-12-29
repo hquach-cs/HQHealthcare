@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0;
+    margin-left: 5px;
   }
 `;
 
@@ -89,20 +89,28 @@ export const NavLinkR = styled(LinkRouter)`
 
 export const NavItemButton = styled.li`
   height: 40px;
-  border: 2px solid #d62839;
-  background: #d62839;
+
   border-radius: 5px;
-  transition: 0.2 all ease-in-out;
   margin-left: 20px;
 `;
 
 export const NavLinkRButton = styled(LinkRouter)`
+  border: 2px solid #d62839;
+  background: #d62839;
+  border-radius: 5px;
   color: #fff;
-  font-weight: bold;
+  font-weight: bolder;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1.25rem;
   height: 100%;
   cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+  }
 `;
