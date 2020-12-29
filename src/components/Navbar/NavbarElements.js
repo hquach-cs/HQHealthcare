@@ -6,7 +6,8 @@ export const Nav = styled.nav`
   /* background: #000; */
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 5%;
   align-items: center;
   top: 0;
   z-index: 10;
@@ -14,31 +15,30 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: space-between;
   height: 80px;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
   color: #000;
-  justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const NavLogoLeft = styled.span`
-  color: red;
+  color: #d62839;
 `;
 
 export const NavMenu = styled.ul`
@@ -47,7 +47,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: 24px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -56,7 +55,6 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
-  width: 100px;
 `;
 
 export const NavLinkS = styled(LinkScroll)`
@@ -70,7 +68,7 @@ export const NavLinkS = styled(LinkScroll)`
 
   &:active,
   &:hover {
-    color: red;
+    color: #d62839;
   }
 `;
 
@@ -85,16 +83,17 @@ export const NavLinkR = styled(LinkRouter)`
 
   &:active,
   &:hover {
-    color: red;
+    color: #d62839;
   }
 `;
 
 export const NavItemButton = styled.li`
   height: 40px;
-  border: 2px solid red;
-  background: red;
+  border: 2px solid #d62839;
+  background: #d62839;
   border-radius: 5px;
   transition: 0.2 all ease-in-out;
+  margin-left: 20px;
 `;
 
 export const NavLinkRButton = styled(LinkRouter)`
