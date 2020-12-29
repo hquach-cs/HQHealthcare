@@ -1,4 +1,8 @@
 import React from "react";
+import bookpic from "./../../images/bookpic.jpg";
+import healthcarepic from "./../../images/healthcarepic.jpg";
+import sciencepic from "./../../images/sciencepic.jpg";
+import vaccinepic from "./../../images/vaccinetake.jpg";
 
 import {
   StoryContainer,
@@ -6,6 +10,10 @@ import {
   StorySubtext,
   StoryWrappers,
   Wrapper,
+  Story,
+  StoryPic,
+  StoryDesc,
+  StoryTitle,
 } from "./StoryElements";
 
 const StorySection = () => {
@@ -27,7 +35,33 @@ const StorySection = () => {
           fringilla tellus scelerisque sit amet.
         </StorySubtext>
       </Wrapper>
-      <StoryWrappers></StoryWrappers>
+      <StoryWrappers>
+        <Story>
+          <StoryPic src={sciencepic}></StoryPic>
+          <StoryTitle>New science methods</StoryTitle>
+          <StoryDesc>
+            Curabitur mattis commodo orci, ut fringilla tellus scelerisque sit
+            amet
+          </StoryDesc>
+        </Story>
+        <Story>
+          <StoryPic src={healthcarepic}></StoryPic>
+          <StoryTitle>Healthcare Rising</StoryTitle>
+          <StoryDesc>
+            Curabitur mattis commodo orci, ut fringilla tellus scelerisque sit
+            amet
+          </StoryDesc>
+        </Story>
+        <Story>
+          {" "}
+          <StoryPic src={vaccinepic}></StoryPic>
+          <StoryTitle>New Vaccine!</StoryTitle>
+          <StoryDesc>
+            Curabitur mattis commodo orci, ut fringilla tellus scelerisque sit
+            amet
+          </StoryDesc>
+        </Story>
+      </StoryWrappers>
     </StoryContainer>
   );
 };

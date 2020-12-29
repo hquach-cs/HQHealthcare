@@ -25,10 +25,50 @@ export const StorySubtext = styled.div`
   margin-top: 15px;
 `;
 
-export const StoryWrappers = styled.div``;
+export const StoryWrappers = styled.div`
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+`;
 
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+`;
+
+export const StoryPic = styled.img`
+  width: 90%;
+  height: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: 0.7s all ease-in;
+`;
+
+export const StoryTitle = styled.h1`
+  font-size: 24px;
+  padding: 5px;
+`;
+
+export const StoryDesc = styled.span`
+  padding-top: 10px;
+`;
+
+export const Story = styled.a`
+  background: white;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  &:hover {
+    ${StoryPic} {
+      transform: scale(1.05);
+    }
+  }
+  cursor: pointer;
 `;
