@@ -17,10 +17,10 @@ const StorySec = () => {
     <StorySection>
       <StorySectionTitle>Breaking News and Story!</StorySectionTitle>
       <StorySectionDesc>
-        Duis ultricies condimentum dui vitae posuere. Suspendisse id purus
-        metus. Duis aliquet consequat quam, quis auctor felis efficitur sed.
-        Etiam nec diam euismod, elementum neque a, laoreet ipsum. Cras vel metus
-        eu est sollicitudin egestas.
+        During pandemic times, its important to have vision on new breaking news
+        to know about things. Our help is to review certain articles and provide
+        aids or ease of to the links of articles. This allow us to provide help
+        for reporters and help to you guys!
       </StorySectionDesc>
       <StoryList>
         <Story>

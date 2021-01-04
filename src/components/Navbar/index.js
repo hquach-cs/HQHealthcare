@@ -24,7 +24,9 @@ const Navbar = () => {
           <NavLinkR to="/resources">Resources</NavLinkR>
         </NavItem>
         <NavItem>
-          <NavLinkS to="about">About Us</NavLinkS>
+          <NavLinkS to="about" spy={true} smooth={true}>
+            About Us
+          </NavLinkS>
         </NavItem>
         <NavItem>
           <NavLinkR to="/careers">Careers</NavLinkR>

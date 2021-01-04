@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const HeaderSection = styled.div`
   width: 100%;
-  height: 240px;
   background: rgb(214, 40, 57, 0.95);
   display: flex;
+  height: 240px;
   justify-content: center;
   @media screen and (max-width: 768px) {
-    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 340px;
   }
 `;
 
@@ -22,6 +24,10 @@ export const HeaderChoice = styled.div`
   background: #d62839;
   display: grid;
   color: white;
+  @media screen and (max-width: 768px) {
+    padding: 5px;
+    border-bottom: 1px solid white;
+  }
 `;
 
 export const HeaderChoiceTitle = styled.h2`
@@ -31,6 +37,8 @@ export const HeaderChoiceTitle = styled.h2`
   align-items: center;
   font-size: 1.7rem;
   font-family: "Raleway", sans-serif;
+  font-style: bold;
+  text-decoration: underline;
 `;
 
 export const HeaderChoiceDesc = styled.span`

@@ -10,7 +10,7 @@ export const StorySection = styled.div`
 `;
 
 export const StorySectionTitle = styled.h1`
-  margin-top: 30px;
+  margin-top: 5%;
   font-size: 2rem;
   font-style: italic;
   text-decoration: underline;
@@ -18,8 +18,9 @@ export const StorySectionTitle = styled.h1`
 `;
 
 export const StorySectionDesc = styled.span`
-  margin-top: 15px;
+  margin-top: 30px;
   text-align: center;
+  margin-bottom: 3%;
   width: 60%;
 `;
 
@@ -29,6 +30,7 @@ export const StoryList = styled.ul`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+  margin-bottom: 3%;
 `;
 
 export const StoryPic = styled.div`
@@ -50,9 +52,10 @@ export const StoryButton = styled.a`
   cursor: pointer;
   text-align: center;
   color: #4ba3c3;
-  font-size: 15px;
+  font-size: 20px;
   &:hover {
     color: #cce6f4;
+    text-decoration: underline;
   }
 `;
 
