@@ -6,10 +6,12 @@ import Warning from "./components/WarningBar";
 import Frontpage from "./components/Frontpage";
 import SignIn from "./components/SignIn";
 import FooterBar from "./components/FooterBar";
+import PopupWindow from "./components/PopupWindow";
 
 function App() {
   return (
     <Router>
+      <PopupWindow></PopupWindow>
       <Warning />
       <Navbar />
       <Route exact path="/">
