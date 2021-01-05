@@ -67,4 +67,9 @@ export const Story = styled.li`
   border: 1px solid rgba(242, 242, 230, 1);
   display: grid;
   grid-template-rows: 50% 10% 25%;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;

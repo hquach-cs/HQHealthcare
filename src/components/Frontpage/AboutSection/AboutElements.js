@@ -44,4 +44,8 @@ export const AboutDesc = styled.span`
 
 export const Img = styled.img`
   height: 300px;
+  transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 768px) {
+    height: 200px;
+  }
 `;
