@@ -6,6 +6,7 @@ import {
   PopupClose,
   PopupTitle,
   PopupDesc,
+  PopupLink,
 } from "./PopupElements";
 
 const PopupWindow = () => {
@@ -20,6 +21,9 @@ const PopupWindow = () => {
           This is a website that is created to showcase my skillset in
           full-stack developing.
         </PopupDesc>
+        <PopupLink href="https://github.com/hquach-cs/HQHealthcare">
+          Source
+        </PopupLink>
       </Popup>
     </PopupContainer>
   );

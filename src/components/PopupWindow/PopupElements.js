@@ -17,7 +17,7 @@ export const Popup = styled.div`
   top: 40%;
   left: 50%;
   transform: translate(-50%, -45%);
-  z-index: 9999;
+  z-index: 10;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@ export const PopupClose = styled.button`
   border: none;
   margin: 5px;
   cursor: pointer;
+  z-index: 100;
 `;
 
 export const PopupTitle = styled.h1`
@@ -41,4 +42,16 @@ export const PopupTitle = styled.h1`
 
 export const PopupDesc = styled.p`
   padding: 10px;
+`;
+
+export const PopupLink = styled.a`
+  color: black;
+  text-decoration: underline;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  &:visited {
+    color: black;
+  }
 `;
